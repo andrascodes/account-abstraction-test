@@ -23,6 +23,9 @@ dependencies:
   next:
     specifier: 14.2.3
     version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1)(react@18.3.1)
+  permissionless:
+    specifier: ^0.1.24
+    version: 0.1.24(viem@2.9.31)
   react:
     specifier: ^18
     version: 18.3.1
@@ -7344,6 +7347,14 @@ packages:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
     dev: false
 
+  /permissionless@0.1.24(viem@2.9.31):
+    resolution: {integrity: sha512-StctaoSxNfFzyEF3O7ajTAxWZB5yEjJ3YW7CjF7Ih7/K1xiuETizmIknsePw8zGkqrLnbrqjOkw8vvFMk8xczA==}
+    peerDependencies:
+      viem: ^2.9.17
+    dependencies:
+      viem: 2.9.31(typescript@5.4.5)
+    dev: false
+
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -7684,6 +7695,7 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: true
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -7776,7 +7788,7 @@ packages:
     dependencies:
       object-assign: 4.1.1
       react: 18.3.1
-      react-is: 16.13.1
+      react-is: 18.3.1
     dev: false
 
   /react@18.3.1:
