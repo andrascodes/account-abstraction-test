@@ -1,8 +1,12 @@
+import { Providers } from "@/components/Providers";
+import { config } from "@/config/wagmi";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { headers } from "next/headers";
+import { cookieToInitialState } from "wagmi";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -19,6 +23,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialState = cookieToInitialState(config, headers().get("cookie"));
+
   return (
     <html lang="en">
       <body
@@ -27,7 +33,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
+        <Providers initialState={initialState}>{children}</Providers>
       </body>
     </html>
   );

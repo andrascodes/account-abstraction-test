@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Account } from "@/components/Account";
 import Image from "next/image";
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
           priority
         />
       </div>
-      <Button>Hello world</Button>
+      <Account />
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
